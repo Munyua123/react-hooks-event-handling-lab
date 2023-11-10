@@ -1,8 +1,15 @@
 // Code Keypad Component Here
 
-function Keypad (){
+function Keypad ({passWord, handlepassword}){
     return (
-        <div></div>
+        <div>
+            <input 
+            type="password"
+            id="newPassword"
+            onChange={handlepassword}
+            value={passWord}
+            />
+        </div>
     )
 }
 
